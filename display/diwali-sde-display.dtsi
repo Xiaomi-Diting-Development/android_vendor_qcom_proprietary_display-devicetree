@@ -45,8 +45,8 @@
 		label = "wb_display";
 	};
 
-	disp_rdump_memory: disp_rdump_region@e1000000 {
-		reg = <0xb8000000 0x00800000>;
+	disp_rdump_memory: disp_rdump_region@b8000000 {
+		reg = <0xb8000000 0x01400000>;
 		label = "disp_rdump_region";
 	};
 };
@@ -96,7 +96,7 @@
 
 	touch_avdd-supply = <&L3C>;
 	vddio-supply = <&L12C>;
-	vci-supply = <&L13C>;
+	vdd-supply = <&L13C>;
 	ibb-supply = <&display_panel_ibb>;
 };
 

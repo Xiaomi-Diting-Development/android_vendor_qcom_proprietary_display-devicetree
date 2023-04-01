@@ -224,6 +224,7 @@
 
 	qcom,sde-ib-bw-vote = <2500000 0 800000>;
 	qcom,sde-has-idle-pc;
+	qcom,sde-wakeup-with-touch;
 	qcom,sde-dspp-ltm-version = <0x00010001>;
 	/* offsets are based off dspp 0 and dspp 1 */
 	qcom,sde-dspp-ltm-off = <0x15300 0x14300>;
@@ -252,6 +253,7 @@
 
 &mdss_dsi0 {
 	vdda-1p2-supply = <&L6B>;
+	qcom,split-link-supported;
 	clocks = <&clock_dispcc DISP_CC_MDSS_BYTE0_CLK>,
 		<&clock_dispcc DISP_CC_MDSS_BYTE0_CLK_SRC>,
 		<&clock_dispcc DISP_CC_MDSS_BYTE0_INTF_CLK>,
@@ -265,6 +267,7 @@
 
 &mdss_dsi1 {
 	vdda-1p2-supply = <&L6B>;
+	qcom,split-link-supported;
 	clocks = <&clock_dispcc DISP_CC_MDSS_BYTE1_CLK>,
 		<&clock_dispcc DISP_CC_MDSS_BYTE1_CLK_SRC>,
 		<&clock_dispcc DISP_CC_MDSS_BYTE1_INTF_CLK>,
